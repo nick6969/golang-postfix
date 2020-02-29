@@ -14,7 +14,7 @@ export class TestFunc extends BaseExpressionTemplate {
 
         return CompletionItemBuilder
             .create('testFunc', lastComponent)
-            .description('quickly create test func')
+            .description('Test Function Create')
             .replace('func Test' + upCase + `(t *testing.T) {\n ${utils.getIndentCharacters()}\${0}\n}`, position, true)
             .deleteTextBeforeCursor(position, lastComponent.length + 1).build();
     }
@@ -28,7 +28,7 @@ export class BenchmarkFunc extends BaseExpressionTemplate {
 
         return CompletionItemBuilder
             .create('benchmarkFunc', lastComponent)
-            .description('create Benchmark func')
+            .description('Benchmark Function Create')
             .replace('func Benchmark' + upCase + `(b *testing.B) {\n ${utils.getIndentCharacters()}\${0}\n}`, position, true)
             .deleteTextBeforeCursor(position, lastComponent.length + 1).build();
     }
