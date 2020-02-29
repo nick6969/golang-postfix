@@ -13,7 +13,7 @@ export function getLastComponent(code: string, position: vscode.Position): strin
     let lastComponent = '';
     for (let i = 0; i < input.length; i++) {
         let character = input.substr(input.length - i - 1, 1);
-        if (!character.match(/[a-zA-Z0-9\(\)\[\]\.]/)) {
+        if (!character.match(/[a-zA-Z0-9_\(\)\[\]\.]/)) {
             return lastComponent;
         }
         lastComponent = character + lastComponent;

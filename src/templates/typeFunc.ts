@@ -20,7 +20,7 @@ export class TypeFunc extends BaseExpressionTemplate {
     }
 }
 
-export const build = () => [
-    new TypeFunc('struct'),
-    new TypeFunc('interface')
+exports.build = () => [
+    new TypeFunc(`struct`),
+    new TypeFunc(`interface`)
 ];

@@ -120,6 +120,22 @@ OutCome:
 
     fmt.Printf("%+v\n", abcd)
 
+### Log
+
+Template: `.log`
+
+OutCome:
+
+    log.Println(abcd)
+
+### Log Format
+
+Template: `.log format`
+
+OutCome:
+
+    log.Printf("%+v\n", abcd)
+
 
 ### Error
 
@@ -151,3 +167,39 @@ OutCome:
 	type abcd interface {
 		
 	}
+
+
+### IsEmpty
+
+Template: `.isEmpty`
+
+OutCome:
+
+    len(abcd) == 0
+
+
+### IsNotEmpty
+
+Template: `.isNotEmpty`
+
+OutCome:
+
+    len(abcd) != 0
+
+### JSON
+
+Template: `.(type)JSON`
+
+    type have string / int / int64 / float32 / float64 / bool
+
+    will capitalization
+
+
+OutCome:
+
+    Abcd (type) `json:"abcd"`
+
+
+## Other Third Party Framework
+
+### Gin

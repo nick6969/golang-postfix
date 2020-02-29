@@ -16,7 +16,8 @@ export class TestFunc extends BaseExpressionTemplate {
             .create('testFunc', lastComponent)
             .description('Test Function Create')
             .replace('func Test' + upCase + `(t *testing.T) {\n ${utils.getIndentCharacters()}\${0}\n}`, position, true)
-            .deleteTextBeforeCursor(position, lastComponent.length + 1).build();
+            .deleteTextBeforeCursor(position, lastComponent.length + 1)
+            .build();
     }
 }
 
@@ -30,7 +31,8 @@ export class BenchmarkFunc extends BaseExpressionTemplate {
             .create('benchmarkFunc', lastComponent)
             .description('Benchmark Function Create')
             .replace('func Benchmark' + upCase + `(b *testing.B) {\n ${utils.getIndentCharacters()}\${0}\n}`, position, true)
-            .deleteTextBeforeCursor(position, lastComponent.length + 1).build();
+            .deleteTextBeforeCursor(position, lastComponent.length + 1)
+            .build();
     }
 }
 

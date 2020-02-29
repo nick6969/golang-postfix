@@ -25,7 +25,30 @@ export class PrintFormatFunc extends BaseExpressionTemplate {
     }
 }
 
+export class LogFunc extends BaseExpressionTemplate {
+    applyItem(code: string, position: vscode.Position) {
+        return CompletionItemBuilder
+            .create('log', code)
+            .description(`log.Println(expr)`)
+            .replace(`log.Println(\${0:{{expr}}})`, position, true)
+            .build();
+    }
+}
+
+export class LogFormatFunc extends BaseExpressionTemplate {
+
+    applyItem(code: string, position: vscode.Position) {
+        return CompletionItemBuilder
+            .create('log format', code)
+            .description(`log.Printf("%+v'\\n", expr)`)
+            .replace(`log.Printf("%+v\\n", \${0:{{expr}}})`, position, true)
+            .build();
+    }
+}
+
 exports.build = () => [
     new PrintFunc(),
-    new PrintFormatFunc()
+    new PrintFormatFunc(),
+    new LogFunc(),
+    new LogFormatFunc()
 ];
