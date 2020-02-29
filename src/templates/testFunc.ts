@@ -21,7 +21,7 @@ export class TestFunc extends BaseExpressionTemplate {
 }
 
 export class BenchmarkFunc extends BaseExpressionTemplate {
-    
+
     applyItem(code: string, position: vscode.Position) {
         let lastComponent = utils.getLastComponent(code, position);
         let upCase = utils.capitalization(lastComponent);
