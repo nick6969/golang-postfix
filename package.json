@@ -5,7 +5,7 @@
 	"version": "0.0.1",
 	"keywords": ["golang", "postfix", "quick"],
 	"license": "MIT",
-	"publisher": "Nick Lin",
+	"publisher": "CHIHHAOLIN",
 	"engines": {
 		"vscode": "^1.42.0"
 	},
