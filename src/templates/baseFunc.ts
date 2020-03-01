@@ -14,6 +14,10 @@ export abstract class BaseExpressionTemplate extends BaseTemplate {
         if (code === ".") {
             return false;
         }
+        // if have the two dot
+        if (code.endsWith(`..`)) {
+            return false;
+        }
         return true;
     }
 }

@@ -2,7 +2,7 @@
 
 import * as vscode from 'vscode';
 
-const COMPLETION_ITEM_TITLE = 'Postfix templates';
+const COMPLETION_ITEM_TITLE = 'Postfix';
 
 export class CompletionItemBuilder {
 

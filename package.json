@@ -9,6 +9,7 @@
 	"engines": {
 		"vscode": "^1.42.0"
 	},
+	"icon": "images/logo.png",
 	"categories": [
 		"Other"
 	],
