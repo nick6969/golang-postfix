@@ -2,8 +2,12 @@
 	"name": "golang-postfix-nick",
 	"displayName": "golang-postfix-nick",
 	"description": "Help Quickly Write Golang",
-	"version": "0.0.1",
-	"keywords": ["golang", "postfix", "quick"],
+	"version": "0.0.2",
+	"keywords": [
+		"golang",
+		"postfix",
+		"quick"
+	],
 	"license": "MIT",
 	"publisher": "CHIHHAOLIN",
 	"engines": {
