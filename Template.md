@@ -74,17 +74,15 @@ OutCome:
 
     }
 
-
 ### For Range
 
 Template: `.for range`
 
 OutCome:
 
-	for index := range abcd {
+    for index := range abcd {
 
     }
-
 
 ### Append
 
@@ -92,8 +90,7 @@ Template: `.append`
 
 OutCome:
 
-	abcd = append(abcd, element)
-
+    abcd = append(abcd, element)
 
 ### Len
 
@@ -102,7 +99,6 @@ Template: `.len`
 OutCome:
 
     len(abcd)
-
 
 ### Print
 
@@ -136,7 +132,6 @@ OutCome:
 
     log.Printf("%+v\n", abcd)
 
-
 ### Error
 
 Template: `.error`
@@ -147,7 +142,6 @@ OutCome:
 
     errors.New("abce")
 
-
 ### Struct
 
 Template: `.struct`
@@ -155,8 +149,8 @@ Template: `.struct`
 OutCome:
 
     type abcd struct {
-		
-	}
+
+    }
 
 ### Interface
 
@@ -164,10 +158,9 @@ Template: `.interface`
 
 OutCome:
 
-	type abcd interface {
-		
-	}
+    type abcd interface {
 
+    }
 
 ### IsEmpty
 
@@ -176,7 +169,6 @@ Template: `.isEmpty`
 OutCome:
 
     len(abcd) == 0
-
 
 ### IsNotEmpty
 
@@ -194,12 +186,12 @@ Template: `.(type)JSON`
 
     will capitalization
 
-
 OutCome:
 
     Abcd (type) `json:"abcd"`
 
-
 ## Other Third Party Framework
 
 ### Gin
+
+### Gorm

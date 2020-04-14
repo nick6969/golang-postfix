@@ -16,10 +16,12 @@ export class ErrorFunc extends BaseExpressionTemplate {
     }
 
     applyItem(code: string, position: vscode.Position) {
+        let replacement = '{{expr}}';
+
         return CompletionItemBuilder
             .create('error', code)
             .description(`errors.New("Error Message")`)
-            .replace(`errors.New(\${1:{{expr}}})`, position, true)
+            .replace(`errors.New(${replacement})`, position, true)
             .build();
     }
 }

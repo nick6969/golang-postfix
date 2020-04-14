@@ -28,7 +28,7 @@ export function capitalization(code: string): string {
     if (code.length === 1) {
         return code.toUpperCase();
     }
-    return code.charAt(0).toUpperCase() + code.substring(1);
+    return code.charAt(0).toUpperCase() + code.substring(1).toLowerCase();
 }
 
 export function getIndentCharacters(): string {
