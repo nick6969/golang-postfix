@@ -2,7 +2,7 @@
 	"name": "golang-postfix-nick",
 	"displayName": "golang-postfix-nick",
 	"description": "Help Quickly Write Golang",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"keywords": [
 		"golang",
 		"postfix",
@@ -39,17 +39,17 @@
 		"test": "node ./out/test/runTest.js"
 	},
 	"devDependencies": {
-		"@types/glob": "^7.1.1",
-		"@types/mocha": "^7.0.1",
-		"@types/node": "^12.11.7",
-		"@types/vscode": "^1.42.0",
-		"@typescript-eslint/eslint-plugin": "^2.18.0",
-		"@typescript-eslint/parser": "^2.18.0",
+		"@types/glob": "7.1.3",
+		"@types/mocha": "7.0.2",
+		"@types/node": "12.12.54",
+		"@types/vscode": "1.47.0",
+		"@typescript-eslint/eslint-plugin": "2.34.0",
+		"@typescript-eslint/parser": "2.34.0",
 		"eslint": "^6.8.0",
 		"glob": "7.1.6",
-		"mocha": "^7.0.1",
-		"typescript": "^3.7.5",
-		"vscode-test": "^1.3.0"
+		"mocha": "7.2.0",
+		"typescript": "3.9.7",
+		"vscode-test": "1.4.0"
 	},
 	"dependencies": {
 		"glob": "7.1.6"

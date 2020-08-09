@@ -30,7 +30,7 @@ export class BenchmarkFunc extends BaseExpressionTemplate {
         return CompletionItemBuilder
             .create('benchmarkFunc', lastComponent)
             .description('Benchmark Function Create')
-            .replace('func Benchmark' + upCase + `(b *testing.B) {\n ${utils.getIndentCharacters()}\${0}\n}`, position, true)
+            .replace('func Benchmark' + upCase + `(b *testing.B) {\n\tfor i := 0; i < b.N; i++ {\n\t${utils.getIndentCharacters()}\${0}\n\t}\n}`, position, true)
             .deleteTextBeforeCursor(position, lastComponent.length + 1)
             .build();
     }
